@@ -1,0 +1,18 @@
+name: nbhack
+
+topology:
+  nodes:
+    nautobot:
+      kind: linux
+      image: ghcr.io/smfeldman/nautobot-hack:n93
+      mgmt-ipv4: 172.21.21.6
+      mgmt-ipv6: 2001:172:21:21::6
+      binds:
+        - .:/clab
+      ports:
+        - 80:8000
+
+mgmt:
+  ipv4-subnet: 172.21.21.0/24 # ip range for the docker network
+  ipv6-subnet: 2001:172:21:21::/64
+  

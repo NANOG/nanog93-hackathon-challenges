@@ -1,0 +1,92 @@
+! Startup-config last modified at Sun Jan 28 03:38:59 2024 by root
+! device: r4 (cEOSLab, EOS-4.31.1F-34556000.4311F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$EXpz1Mx4RrOgS9.U$0ne9UB6AnvH8AchhnjdoE3WZYD6ciamOSHMie55J8KLLMYS4pQGj2EvIqbovX8o1bZgH7DIryOAuasm3xojlv0
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname r4
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description to: r3-eth2
+   no switchport
+   ip address 10.10.3.1/31
+   ipv6 address 2001:db8:10:10:3::1/127
+!
+interface Ethernet2
+   description to: r2-eth3
+   no switchport
+   ip address 10.10.2.1/31
+   ipv6 address 2001:db8:10:10:2::1/127
+!
+interface Loopback0
+   ip address 192.168.0.4/32
+   ipv6 address 2001:db8:0:1::4/128
+!
+interface Management0
+   ip address 172.20.20.64/24
+   ipv6 address 2001:172:20:20::b/64
+!
+ip routing
+!
+ip prefix-list MGMT-NETS
+   seq 10 deny 172.20.20.0/24
+   seq 20 permit 0.0.0.0/0 le 32
+!
+ipv6 prefix-list MGMT-NETSv6
+   seq 10 deny 2001:172:20:20::/64
+   seq 20 permit ::/0 le 128
+!
+ipv6 unicast-routing
+!
+ip route 0.0.0.0/0 172.20.20.1
+!
+ipv6 route ::/0 2001:172:20:20::1
+!
+route-map CONNECTED_FILTER permit 10
+   match ip address prefix-list MGMT-NETS
+!
+route-map CONNECTED_FILTERv6 permit 10
+   match ipv6 address prefix-list MGMT-NETSv6
+!
+router bgp 65004
+   router-id 192.168.0.4
+   neighbor 10.10.2.0 remote-as 65002
+   neighbor 10.10.2.0 description r2
+   neighbor 10.10.3.0 remote-as 65003
+   neighbor 10.10.3.0 description r3
+   neighbor 2001:db8:10:10:2:: remote-as 65002
+   neighbor 2001:db8:10:10:2:: description r2-ipv6
+   neighbor 2001:db8:10:10:3:: remote-as 65003
+   neighbor 2001:db8:10:10:3:: description r3-ipv6
+   !
+   address-family ipv4
+      neighbor 10.10.2.0 activate
+      neighbor 10.10.3.0 activate
+      redistribute connected route-map CONNECTED_FILTER
+   !
+   address-family ipv6
+      neighbor 2001:db8:10:10:2:: activate
+      neighbor 2001:db8:10:10:3:: activate
+      redistribute connected route-map CONNECTED_FILTERv6
+!
+end

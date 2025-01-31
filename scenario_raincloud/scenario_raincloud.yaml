@@ -1,0 +1,54 @@
+name: scenario_raincloud
+mgmt:
+  network: mgmt
+  ipv4-subnet: 172.24.0.0/24
+topology:
+  nodes:
+    1_player_client:
+      kind: linux
+      image: ubuntu:n91_client
+      mgmt-ipv4: 172.24.0.11
+      exec:
+       - ip addr add 192.168.0.0/31 dev eth1
+       - ip route change default via 192.168.0.1 dev eth1
+    2_player_crpd:
+      kind: juniper_crpd
+      image: crpd:latest
+      mgmt-ipv4: 172.24.0.12
+      startup-config: files/base.conf
+    3_amazon_router_no_access:
+      kind: linux
+      image: ubuntu:gobgp_amazon 
+      mgmt-ipv4: 172.24.0.13
+      exec:
+       - bash /home/ubuntu/init.sh
+    4_rpki_validator_no_access:
+      kind: linux
+      image: nlnetlabs/routinator:latest
+      mgmt-ipv4: 172.24.0.14
+      ports:
+       - 80:8323
+      exec:
+       - ip addr add 192.154.140.2 dev eth1
+       - ip route add 192.168.100.32 dev eth1
+    5_torix_route_server:
+      kind: linux
+      image: ubuntu:gobgp2
+      mgmt-ipv4: 172.24.0.16
+      exec:
+       - bash /home/ubuntu/init.sh
+    6_web_server_no_access:
+      kind: linux
+      image: ubuntu:server-n91
+      mgmt-ipv4: 172.24.0.15
+      exec:
+       - bash /home/ubuntu/init.sh
+  links:
+    - endpoints: ["1_player_client:eth1", "2_player_crpd:eth1"]
+    - endpoints: ["2_player_crpd:eth2", "mgmt-net:2_player_crpd-eth2"]
+    - endpoints: ["3_amazon_router_no_access:eth1", "mgmt-net:3_amazon_router-eth1"]
+    - endpoints: ["3_amazon_router_no_access:eth2", "mgmt-net:3_amazon_router-eth2"]
+    - endpoints: ["4_rpki_validator_no_access:eth1", "mgmt-net:4_rpki_validator-eth1"]
+    - endpoints: ["5_torix_route_server:eth1", "mgmt-net:5_torix_route_server-eth1"]
+    - endpoints: ["6_web_server_no_access:eth1", "mgmt-net:6_web_server-eth1"]
+

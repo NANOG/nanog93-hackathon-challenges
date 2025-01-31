@@ -1,0 +1,78 @@
+! Startup-config last modified at Fri Oct 18 23:52:49 2024 by admin
+! device: r4 (cEOSLab, EOS-4.32.2F-38195967.4322F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$EXpz1Mx4RrOgS9.U$0ne9UB6AnvH8AchhnjdoE3WZYD6ciamOSHMie55J8KLLMYS4pQGj2EvIqbovX8o1bZgH7DIryOAuasm3xojlv0
+!
+management api http-commands
+   no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname r4
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api gnmi
+   transport grpc default
+!
+management api models
+   provider aft
+      ipv4-unicast
+      ipv6-unicast
+   !
+   provider macsec
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description to: r3-eth2
+   no switchport
+   ipv6 address 2001:db8:10:10:3::1/127
+!
+interface Ethernet2
+   description to: r2-eth3
+   no switchport
+   ipv6 address 2001:db8:10:10:2::1/127
+!
+interface Management0
+   ip address 172.20.20.64/24
+   ipv6 address 2001:172:20:20::5/64
+!
+ip routing
+!
+ipv6 unicast-routing
+!
+router traffic-engineering
+   router-id ipv4 192.168.0.4
+!
+router isis CORE
+   net 49.0001.1921.6800.0004.00
+   is-type level-2
+   !
+   address-family ipv4 unicast
+   !
+   address-family ipv6 unicast
+   !
+   traffic-engineering
+      no shutdown
+      is-type level-2
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end

@@ -1,0 +1,1201 @@
+Jun  9 14:35:50  2_player_crpd mgd[322]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:35:50  2_player_crpd mgd[322]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [322], ssh-connection '', client-mode 'cli'
+Jun  9 14:35:50  2_player_crpd mgd[322]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Jun  9 14:35:50  2_player_crpd mgd[322]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 14:35:50  2_player_crpd mgd[315]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:35:50  2_player_crpd mgd[315]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [315], ssh-connection '', client-mode 'netconf'
+Jun  9 14:35:50  2_player_crpd mgd[315]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Jun  9 14:35:50  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Jun  9 14:35:51  2_player_crpd mgd[366]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:35:51  2_player_crpd mgd[366]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [366], ssh-connection '', client-mode 'cli'
+Jun  9 14:35:51  2_player_crpd mgd[366]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Jun  9 14:35:51  2_player_crpd mgd[366]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [365], ssh-connection '', client-mode 'netconf'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Jun  9 14:35:51  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Jun  9 14:36:03  2_player_crpd mgd[381]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:36:03  2_player_crpd mgd[381]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [381], ssh-connection '', client-mode 'cli'
+Jun  9 14:36:05  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 14:36:31  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Jun  9 14:36:37  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'show validation session '
+Jun  9 14:36:47  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Jun  9 14:36:47  2_player_crpd mgd[381]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Jun  9 14:36:58  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'set protocols bgp group KCIX neighbor 192.168.100.33 peer-as 16509 description amazon '
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'commit '
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT: User 'root' requested 'commit' operation (comment: none)
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: updating commit revision
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: UI extensions feature is not configured
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: UI change-notification feature is not configured
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Started running translation script
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: No delta input for translation
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Finished running translation script
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: No translation output from the scripts
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: building groups inheritance path proportional in candidate db
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finished groups inheritance path
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Sending constraint check command to evaluate constraints
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_START: Starting child '/usr/sbin/mustd'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mustd', PID 387, status 0
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: constraints passed in mustd - not checking constraints in propagation
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp propagate
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 396, status 0
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp propagate
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Spawning Routing protocols process to check new configuration
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Collecting status of Routing protocols process
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 397, status 0
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 400, status 0
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/issue'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/etc/pam.d/juniper-auth'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_radius.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_tacplus.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_events.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_radius_servers.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_servers.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_options.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd.junos'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ephinst.conf'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/max-cli-sessions'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(5)
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 241, signal 1, status 0 with notification errors enabled
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: mgd tracing: disabled
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: New database revision 'localhost-1717943945-11' and old database revision 'localhost-1717943748-10'
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 14:39:05  2_player_crpd mgd[381]: UI_COMMIT_COMPLETED:  : commit complete 
+Jun  9 14:39:07  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 14:39:07  2_player_crpd mgd[381]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Jun  9 14:39:11  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'show route hidden '
+Jun  9 14:39:55  2_player_crpd mgd[381]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 14:39:55  2_player_crpd mgd[381]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 14:40:07  2_player_crpd mgd[472]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:40:07  2_player_crpd mgd[472]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [472], ssh-connection '', client-mode 'cli'
+Jun  9 14:41:44  2_player_crpd mgd[472]: UI_CMDLINE_READ_LINE: User 'root', command 'show route hidden '
+Jun  9 14:51:28  2_player_crpd mgd[324]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:51:28  2_player_crpd mgd[324]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [324], ssh-connection '', client-mode 'cli'
+Jun  9 14:51:28  2_player_crpd mgd[324]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Jun  9 14:51:28  2_player_crpd mgd[324]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 14:51:28  2_player_crpd mgd[319]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:51:28  2_player_crpd mgd[319]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [319], ssh-connection '', client-mode 'netconf'
+Jun  9 14:51:28  2_player_crpd mgd[319]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Jun  9 14:51:28  2_player_crpd mgd[319]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Jun  9 14:51:29  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:51:29  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Jun  9 14:51:29  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Jun  9 14:51:29  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Jun  9 14:51:29  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Jun  9 14:53:17  2_player_crpd mgd[380]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 14:53:17  2_player_crpd mgd[380]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [380], ssh-connection '', client-mode 'cli'
+Jun  9 14:53:45  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Jun  9 14:53:45  2_player_crpd mgd[380]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Jun  9 14:53:48  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'set protocols bgp group KCIX neighbor 192.168.100.34 peer-as 65002 '
+Jun  9 14:53:49  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'show | compare '
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'commit '
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT: User 'root' requested 'commit' operation (comment: none)
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: updating commit revision
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: UI extensions feature is not configured
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: UI change-notification feature is not configured
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Started running translation script
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: No delta input for translation
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Finished running translation script
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: No translation output from the scripts
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: building groups inheritance path proportional in candidate db
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finished groups inheritance path
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Sending constraint check command to evaluate constraints
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CHILD_START: Starting child '/usr/sbin/mustd'
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mustd', PID 387, status 0
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: constraints passed in mustd - not checking constraints in propagation
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp propagate
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 396, status 0
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp propagate
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Spawning Routing protocols process to check new configuration
+Jun  9 14:53:50  2_player_crpd mgd[380]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Collecting status of Routing protocols process
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 397, status 0
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 400, status 0
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/issue'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/etc/pam.d/juniper-auth'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_radius.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_tacplus.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_events.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_radius_servers.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_servers.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_options.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd.junos'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ephinst.conf'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/max-cli-sessions'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(5)
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 265, signal 1, status 0 with notification errors enabled
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: mgd tracing: disabled
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: New database revision 'localhost-1717944830-11' and old database revision 'localhost-1717944686-10'
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 14:53:51  2_player_crpd mgd[380]: UI_COMMIT_COMPLETED:  : commit complete 
+Jun  9 14:54:04  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 14:54:04  2_player_crpd mgd[380]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Jun  9 14:54:06  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | no-more '
+Jun  9 15:36:20  2_player_crpd mgd[494]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:36:20  2_player_crpd mgd[494]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [494], ssh-connection '', client-mode 'cli'
+Jun  9 15:36:22  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:36:55  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Jun  9 15:37:03  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Jun  9 15:37:03  2_player_crpd mgd[494]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Jun  9 15:39:53  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 15:39:53  2_player_crpd mgd[494]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Jun  9 15:39:55  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:39:57  2_player_crpd last message repeated 3 times
+Jun  9 15:40:01  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show log messages | match 192.168.100.34 '
+Jun  9 15:40:07  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:40:11  2_player_crpd last message repeated 6 times
+Jun  9 15:40:49  2_player_crpd last message repeated 4 times
+Jun  9 15:40:57  2_player_crpd mgd[494]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | no-more '
+Jun  9 15:42:21  2_player_crpd mgd[301]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:42:21  2_player_crpd mgd[301]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [301], ssh-connection '', client-mode 'cli'
+Jun  9 15:42:21  2_player_crpd mgd[301]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Jun  9 15:42:21  2_player_crpd mgd[301]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:42:21  2_player_crpd mgd[289]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:42:21  2_player_crpd mgd[289]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [289], ssh-connection '', client-mode 'netconf'
+Jun  9 15:42:21  2_player_crpd mgd[289]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Jun  9 15:42:21  2_player_crpd mgd[289]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Jun  9 15:42:22  2_player_crpd mgd[346]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:42:22  2_player_crpd mgd[346]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [346], ssh-connection '', client-mode 'cli'
+Jun  9 15:42:22  2_player_crpd mgd[346]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Jun  9 15:42:22  2_player_crpd mgd[346]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [345], ssh-connection '', client-mode 'netconf'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Jun  9 15:42:22  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Jun  9 15:42:29  2_player_crpd mgd[360]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:42:29  2_player_crpd mgd[360]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [360], ssh-connection '', client-mode 'cli'
+Jun  9 15:42:32  2_player_crpd mgd[360]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:42:55  2_player_crpd last message repeated 27 times
+Jun  9 15:43:27  2_player_crpd mgd[360]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 15:43:27  2_player_crpd mgd[360]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:46:20  2_player_crpd mgd[372]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:46:20  2_player_crpd mgd[372]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [372], ssh-connection '', client-mode 'cli'
+Jun  9 15:46:21  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:48:50  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:49:36  2_player_crpd last message repeated 45 times
+Jun  9 15:53:01  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Jun  9 15:53:02  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Jun  9 15:53:02  2_player_crpd mgd[372]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Jun  9 15:53:13  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'set protocols bgp hold-time 3 '
+Jun  9 15:53:50  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show | compare '
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'commit '
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT: User 'root' requested 'commit' operation (comment: none)
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: updating commit revision
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: UI extensions feature is not configured
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: UI change-notification feature is not configured
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Started running translation script
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: No delta input for translation
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Finished running translation script
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: No translation output from the scripts
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: building groups inheritance path proportional in candidate db
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finished groups inheritance path
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Sending constraint check command to evaluate constraints
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_START: Starting child '/usr/sbin/mustd'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mustd', PID 381, status 0
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: constraints passed in mustd - not checking constraints in propagation
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp propagate
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 390, status 0
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp propagate
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Spawning Routing protocols process to check new configuration
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Collecting status of Routing protocols process
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 391, status 0
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 394, status 0
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/issue'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/etc/pam.d/juniper-auth'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_radius.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_tacplus.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_events.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_radius_servers.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_servers.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_options.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd.junos'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ephinst.conf'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/max-cli-sessions'
+Jun  9 15:53:51  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(5)
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 244, signal 1, status 0 with notification errors enabled
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: mgd tracing: disabled
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: New database revision 'localhost-1717948431-11' and old database revision 'localhost-1717947740-10'
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 15:53:52  2_player_crpd mgd[372]: UI_COMMIT_COMPLETED:  : commit complete 
+Jun  9 15:53:53  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 15:53:53  2_player_crpd mgd[372]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Jun  9 15:53:54  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:54:12  2_player_crpd last message repeated 26 times
+Jun  9 15:54:15  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | no-more '
+Jun  9 15:54:19  2_player_crpd mgd[372]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 15:54:19  2_player_crpd mgd[372]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:55:45  2_player_crpd mgd[346]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:55:45  2_player_crpd mgd[346]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [346], ssh-connection '', client-mode 'cli'
+Jun  9 15:55:45  2_player_crpd mgd[346]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Jun  9 15:55:45  2_player_crpd mgd[346]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [345], ssh-connection '', client-mode 'netconf'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Jun  9 15:55:45  2_player_crpd mgd[345]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Jun  9 15:55:49  2_player_crpd mgd[353]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:55:49  2_player_crpd mgd[353]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [353], ssh-connection '', client-mode 'cli'
+Jun  9 15:55:49  2_player_crpd mgd[353]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Jun  9 15:55:49  2_player_crpd mgd[353]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:55:49  2_player_crpd mgd[320]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:55:49  2_player_crpd mgd[320]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [320], ssh-connection '', client-mode 'netconf'
+Jun  9 15:55:49  2_player_crpd mgd[320]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Jun  9 15:55:49  2_player_crpd mgd[320]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Jun  9 15:57:05  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:57:05  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Jun  9 15:57:06  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:57:14  2_player_crpd last message repeated 9 times
+Jun  9 15:57:19  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 15:57:19  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 15:59:33  2_player_crpd mgd[371]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 15:59:33  2_player_crpd mgd[371]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [371], ssh-connection '', client-mode 'cli'
+Jun  9 15:59:35  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 15:59:40  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Jun  9 15:59:44  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'show validation session '
+Jun  9 16:01:03  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 16:01:03  2_player_crpd mgd[371]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 16:02:51  2_player_crpd mgd[383]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 16:02:51  2_player_crpd mgd[383]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [383], ssh-connection '', client-mode 'cli'
+Jun  9 16:03:00  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Jun  9 16:03:01  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Jun  9 16:03:01  2_player_crpd mgd[383]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Jun  9 16:03:06  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'delete policy-options policy-statement KCIX_IMPORT term RPKI_UNKNOWN then '
+Jun  9 16:03:07  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'show | compare '
+Jun  9 16:03:10  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'delete policy-options policy-statement KCIX_IMPORT term RPKI_VALID then '
+Jun  9 16:03:12  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'show | compare '
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'commit '
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT: User 'root' requested 'commit' operation (comment: none)
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: updating commit revision
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: UI extensions feature is not configured
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: UI change-notification feature is not configured
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Started running translation script
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: No delta input for translation
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Finished running translation script
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: No translation output from the scripts
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: building groups inheritance path proportional in candidate db
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finished groups inheritance path
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Sending constraint check command to evaluate constraints
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_START: Starting child '/usr/sbin/mustd'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mustd', PID 393, status 0
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: constraints passed in mustd - not checking constraints in propagation
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp propagate
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 402, status 0
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp propagate
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Spawning Routing protocols process to check new configuration
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Collecting status of Routing protocols process
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 403, status 0
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 406, status 0
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/issue'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/etc/pam.d/juniper-auth'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_radius.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_tacplus.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_events.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_radius_servers.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_servers.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_options.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd.junos'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ephinst.conf'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/max-cli-sessions'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(5)
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 260, signal 1, status 0 with notification errors enabled
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: mgd tracing: disabled
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: New database revision 'localhost-1717948993-11' and old database revision 'localhost-1717948542-10'
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 16:03:13  2_player_crpd mgd[383]: UI_COMMIT_COMPLETED:  : commit complete 
+Jun  9 16:03:15  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 16:03:15  2_player_crpd mgd[383]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Jun  9 16:03:19  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Jun  9 16:04:41  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | no-more '
+Jun  9 16:04:48  2_player_crpd mgd[383]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Jun  9 16:04:48  2_player_crpd mgd[383]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 17:52:52  2_player_crpd mgd[299]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 17:52:52  2_player_crpd mgd[299]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [299], ssh-connection '', client-mode 'cli'
+Jun  9 17:52:52  2_player_crpd mgd[299]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Jun  9 17:52:52  2_player_crpd mgd[299]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 17:52:53  2_player_crpd mgd[298]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 17:52:53  2_player_crpd mgd[298]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [298], ssh-connection '', client-mode 'netconf'
+Jun  9 17:52:53  2_player_crpd mgd[298]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Jun  9 17:52:53  2_player_crpd mgd[298]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Jun  9 17:52:54  2_player_crpd mgd[331]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 17:52:54  2_player_crpd mgd[331]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [331], ssh-connection '', client-mode 'cli'
+Jun  9 17:52:54  2_player_crpd mgd[331]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Jun  9 17:52:54  2_player_crpd mgd[331]: UI_LOGOUT_EVENT: User 'root' logout
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [330], ssh-connection '', client-mode 'netconf'
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Jun  9 17:52:54  2_player_crpd mgd[330]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Jun  9 17:52:55  2_player_crpd mgd[330]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 07:26:50  2_player_crpd mgd[332]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:26:50  2_player_crpd mgd[332]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [332], ssh-connection '', client-mode 'cli'
+Oct 20 07:26:50  2_player_crpd mgd[332]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 07:26:50  2_player_crpd mgd[332]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [331], ssh-connection '', client-mode 'netconf'
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 07:26:50  2_player_crpd mgd[331]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 07:26:51  2_player_crpd mgd[331]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 07:26:51  2_player_crpd mgd[331]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:26:51  2_player_crpd mgd[359]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:26:51  2_player_crpd mgd[359]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [359], ssh-connection '', client-mode 'cli'
+Oct 20 07:26:52  2_player_crpd mgd[359]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 07:26:52  2_player_crpd mgd[359]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:26:52  2_player_crpd mgd[291]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:26:52  2_player_crpd mgd[291]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [291], ssh-connection '', client-mode 'netconf'
+Oct 20 07:26:52  2_player_crpd mgd[291]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 07:26:52  2_player_crpd mgd[291]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 07:29:50  2_player_crpd mgd[370]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:29:50  2_player_crpd mgd[370]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [370], ssh-connection '', client-mode 'cli'
+Oct 20 07:29:50  2_player_crpd mgd[370]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:29:53  2_player_crpd mgd[378]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:29:53  2_player_crpd mgd[378]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [378], ssh-connection '', client-mode 'cli'
+Oct 20 07:29:53  2_player_crpd mgd[378]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:30:00  2_player_crpd mgd[386]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:30:00  2_player_crpd mgd[386]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [386], ssh-connection '', client-mode 'cli'
+Oct 20 07:30:00  2_player_crpd mgd[386]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:30:04  2_player_crpd mgd[397]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:30:04  2_player_crpd mgd[397]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [397], ssh-connection '', client-mode 'cli'
+Oct 20 07:30:04  2_player_crpd mgd[397]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:30:14  2_player_crpd mgd[411]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:30:14  2_player_crpd mgd[411]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [411], ssh-connection '', client-mode 'cli'
+Oct 20 07:30:14  2_player_crpd mgd[411]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:31:05  2_player_crpd mgd[425]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:31:05  2_player_crpd mgd[425]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [425], ssh-connection '', client-mode 'cli'
+Oct 20 07:31:16  2_player_crpd mgd[425]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | no-more '
+Oct 20 07:31:32  2_player_crpd mgd[425]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 07:41:50  2_player_crpd mgd[425]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set '
+Oct 20 07:41:58  2_player_crpd mgd[425]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set | match 103.243.140 '
+Oct 20 07:43:25  2_player_crpd mgd[425]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 07:43:25  2_player_crpd mgd[425]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:46:47  2_player_crpd mgd[441]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:46:47  2_player_crpd mgd[441]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [441], ssh-connection '', client-mode 'cli'
+Oct 20 07:46:51  2_player_crpd mgd[441]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 07:56:30  2_player_crpd mgd[319]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:56:30  2_player_crpd mgd[319]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [319], ssh-connection '', client-mode 'cli'
+Oct 20 07:56:30  2_player_crpd mgd[319]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 07:56:30  2_player_crpd mgd[319]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:56:30  2_player_crpd mgd[313]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:56:31  2_player_crpd mgd[313]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [313], ssh-connection '', client-mode 'netconf'
+Oct 20 07:56:31  2_player_crpd mgd[313]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 07:56:31  2_player_crpd mgd[313]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 07:56:32  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:56:32  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 07:56:32  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 07:56:32  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 07:56:32  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:02:08  2_player_crpd mgd[323]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:02:08  2_player_crpd mgd[323]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [323], ssh-connection '', client-mode 'cli'
+Oct 20 08:02:08  2_player_crpd mgd[323]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:02:08  2_player_crpd mgd[323]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:02:08  2_player_crpd mgd[319]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:02:08  2_player_crpd mgd[319]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [319], ssh-connection '', client-mode 'netconf'
+Oct 20 08:02:08  2_player_crpd mgd[319]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:02:08  2_player_crpd mgd[319]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:02:09  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:02:09  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 08:02:09  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:02:09  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:02:09  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:03:16  2_player_crpd mgd[380]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:03:16  2_player_crpd mgd[380]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [380], ssh-connection '', client-mode 'cli'
+Oct 20 08:03:23  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:03:31  2_player_crpd last message repeated 10 times
+Oct 20 08:07:58  2_player_crpd mgd[325]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:07:58  2_player_crpd mgd[325]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [325], ssh-connection '', client-mode 'cli'
+Oct 20 08:07:58  2_player_crpd mgd[325]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:07:58  2_player_crpd mgd[325]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:07:58  2_player_crpd mgd[311]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:07:58  2_player_crpd mgd[311]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [311], ssh-connection '', client-mode 'netconf'
+Oct 20 08:07:58  2_player_crpd mgd[311]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:07:58  2_player_crpd mgd[311]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:07:59  2_player_crpd mgd[365]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:07:59  2_player_crpd mgd[365]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [365], ssh-connection '', client-mode 'cli'
+Oct 20 08:07:59  2_player_crpd mgd[365]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:07:59  2_player_crpd mgd[365]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'netconf'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:07:59  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:08:36  2_player_crpd mgd[379]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:08:36  2_player_crpd mgd[379]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [379], ssh-connection '', client-mode 'cli'
+Oct 20 08:08:37  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:08:52  2_player_crpd last message repeated 3 times
+Oct 20 08:08:54  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:08:54  2_player_crpd mgd[379]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:16:29  2_player_crpd mgd[326]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:16:29  2_player_crpd mgd[326]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [326], ssh-connection '', client-mode 'cli'
+Oct 20 08:16:29  2_player_crpd mgd[326]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:16:29  2_player_crpd mgd[326]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:16:29  2_player_crpd mgd[322]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:16:29  2_player_crpd mgd[322]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [322], ssh-connection '', client-mode 'netconf'
+Oct 20 08:16:29  2_player_crpd mgd[322]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:16:29  2_player_crpd mgd[322]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:16:30  2_player_crpd mgd[365]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:16:30  2_player_crpd mgd[365]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [365], ssh-connection '', client-mode 'cli'
+Oct 20 08:16:30  2_player_crpd mgd[365]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:16:30  2_player_crpd mgd[365]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'netconf'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:16:30  2_player_crpd mgd[364]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:18:52  2_player_crpd mgd[380]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:18:52  2_player_crpd mgd[380]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [380], ssh-connection '', client-mode 'cli'
+Oct 20 08:18:54  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:18:58  2_player_crpd last message repeated 3 times
+Oct 20 08:19:07  2_player_crpd last message repeated 14 times
+Oct 20 08:19:57  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:19:57  2_player_crpd mgd[380]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:25:38  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:25:38  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 08:25:38  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:25:38  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:25:38  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:25:42  2_player_crpd mgd[371]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:25:42  2_player_crpd mgd[371]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [371], ssh-connection '', client-mode 'cli'
+Oct 20 08:25:42  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:25:42  2_player_crpd mgd[371]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:25:42  2_player_crpd mgd[307]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:25:42  2_player_crpd mgd[307]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [307], ssh-connection '', client-mode 'netconf'
+Oct 20 08:25:42  2_player_crpd mgd[307]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:25:42  2_player_crpd mgd[307]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:26:26  2_player_crpd mgd[380]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:26:26  2_player_crpd mgd[380]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [380], ssh-connection '', client-mode 'cli'
+Oct 20 08:26:28  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:27:06  2_player_crpd last message repeated 50 times
+Oct 20 08:27:09  2_player_crpd mgd[380]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:27:09  2_player_crpd mgd[380]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:29:14  2_player_crpd mgd[328]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:29:14  2_player_crpd mgd[328]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [328], ssh-connection '', client-mode 'cli'
+Oct 20 08:29:14  2_player_crpd mgd[328]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:29:14  2_player_crpd mgd[328]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:29:14  2_player_crpd mgd[324]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:29:14  2_player_crpd mgd[324]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [324], ssh-connection '', client-mode 'netconf'
+Oct 20 08:29:14  2_player_crpd mgd[324]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:29:14  2_player_crpd mgd[324]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:29:15  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:29:15  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 08:29:15  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:29:15  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:29:15  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:29:54  2_player_crpd mgd[379]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:29:54  2_player_crpd mgd[379]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [379], ssh-connection '', client-mode 'cli'
+Oct 20 08:29:57  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set '
+Oct 20 08:29:58  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'configure '
+Oct 20 08:29:58  2_player_crpd mgd[379]: UI_DBASE_LOGIN_EVENT: User 'root' entering configuration mode
+Oct 20 08:31:25  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'set protocols bgp group KCIX neighbor 192.168.100.34 peer-as 65002 route-server-client '
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'commit '
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT: User 'root' requested 'commit' operation (comment: none)
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: updating commit revision
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: UI extensions feature is not configured
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: UI change-notification feature is not configured
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Started running translation script
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: No delta input for translation
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Finished running translation script
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: No translation output from the scripts
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: building groups inheritance path proportional in candidate db
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finished groups inheritance path
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Sending constraint check command to evaluate constraints
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_START: Starting child '/usr/sbin/mustd'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mustd', PID 388, status 0
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: constraints passed in mustd - not checking constraints in propagation
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp propagate
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 397, status 0
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp propagate
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Spawning Routing protocols process to check new configuration
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Collecting status of Routing protocols process
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 398, status 0
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 401, status 0
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/issue'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/etc/pam.d/juniper-auth'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_radius.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam_tacplus.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_events.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_radius_servers.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_servers.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/accounting_tacplus_options.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/motd.junos'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ephinst.conf'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/max-cli-sessions'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(5)
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 270, signal 1, status 0 with notification errors enabled
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: mgd tracing: disabled
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: New database revision 'localhost-1729413087-11' and old database revision 'localhost-1729412952-10'
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:31:27  2_player_crpd mgd[379]: UI_COMMIT_COMPLETED:  : commit complete 
+Oct 20 08:31:28  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:31:28  2_player_crpd mgd[379]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Oct 20 08:31:32  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Oct 20 08:31:34  2_player_crpd last message repeated 3 times
+Oct 20 08:31:40  2_player_crpd mgd[379]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:31:40  2_player_crpd mgd[379]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:37:06  2_player_crpd mgd[322]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:37:06  2_player_crpd mgd[322]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [322], ssh-connection '', client-mode 'cli'
+Oct 20 08:37:06  2_player_crpd mgd[322]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:37:06  2_player_crpd mgd[322]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:37:07  2_player_crpd mgd[319]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:37:07  2_player_crpd mgd[319]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [319], ssh-connection '', client-mode 'netconf'
+Oct 20 08:37:07  2_player_crpd mgd[319]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:37:07  2_player_crpd mgd[319]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:37:08  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:37:08  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Oct 20 08:37:08  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:37:08  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [362], ssh-connection '', client-mode 'netconf'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:37:08  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:37:39  2_player_crpd mgd[378]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:37:39  2_player_crpd mgd[378]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [378], ssh-connection '', client-mode 'cli'
+Oct 20 08:37:40  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:37:43  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Oct 20 08:37:44  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'show bgp summary '
+Oct 20 08:37:45  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:37:53  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'show route '
+Oct 20 08:38:10  2_player_crpd mgd[378]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 08:38:10  2_player_crpd mgd[378]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:39:34  2_player_crpd mgd[327]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:39:34  2_player_crpd mgd[327]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [327], ssh-connection '', client-mode 'cli'
+Oct 20 08:39:34  2_player_crpd mgd[327]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:39:34  2_player_crpd mgd[327]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:39:34  2_player_crpd mgd[324]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:39:34  2_player_crpd mgd[324]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [324], ssh-connection '', client-mode 'netconf'
+Oct 20 08:39:34  2_player_crpd mgd[324]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:39:34  2_player_crpd mgd[324]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:39:35  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:39:35  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Oct 20 08:39:35  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:39:35  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:39:35  2_player_crpd mgd[362]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:39:35  2_player_crpd mgd[362]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [362], ssh-connection '', client-mode 'netconf'
+Oct 20 08:39:35  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:39:35  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:41:53  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:41:53  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Oct 20 08:41:53  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:41:53  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [362], ssh-connection '', client-mode 'netconf'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:41:53  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:41:56  2_player_crpd mgd[370]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:41:56  2_player_crpd mgd[370]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [370], ssh-connection '', client-mode 'cli'
+Oct 20 08:41:56  2_player_crpd mgd[370]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:41:56  2_player_crpd mgd[370]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:41:57  2_player_crpd mgd[321]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:41:57  2_player_crpd mgd[321]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [321], ssh-connection '', client-mode 'netconf'
+Oct 20 08:41:57  2_player_crpd mgd[321]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:41:57  2_player_crpd mgd[321]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:44:51  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:44:51  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 08:44:51  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:44:51  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:44:51  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:44:54  2_player_crpd mgd[371]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:44:54  2_player_crpd mgd[371]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [371], ssh-connection '', client-mode 'cli'
+Oct 20 08:44:54  2_player_crpd mgd[371]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:44:54  2_player_crpd mgd[371]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:44:54  2_player_crpd mgd[322]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:44:54  2_player_crpd mgd[322]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [322], ssh-connection '', client-mode 'netconf'
+Oct 20 08:44:54  2_player_crpd mgd[322]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:44:54  2_player_crpd mgd[322]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 08:48:50  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:48:50  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Oct 20 08:48:50  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 08:48:50  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [362], ssh-connection '', client-mode 'netconf'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 08:48:50  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 08:48:53  2_player_crpd mgd[370]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:48:53  2_player_crpd mgd[370]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [370], ssh-connection '', client-mode 'cli'
+Oct 20 08:48:53  2_player_crpd mgd[370]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 08:48:53  2_player_crpd mgd[370]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 08:48:53  2_player_crpd mgd[309]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 08:48:53  2_player_crpd mgd[309]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [309], ssh-connection '', client-mode 'netconf'
+Oct 20 08:48:53  2_player_crpd mgd[309]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 08:48:53  2_player_crpd mgd[309]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:12:55  2_player_crpd mgd[316]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:12:55  2_player_crpd mgd[316]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [316], ssh-connection '', client-mode 'cli'
+Oct 20 09:12:55  2_player_crpd mgd[316]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:12:55  2_player_crpd mgd[316]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [315], ssh-connection '', client-mode 'netconf'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 09:12:55  2_player_crpd mgd[315]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 09:12:58  2_player_crpd mgd[328]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:12:58  2_player_crpd mgd[328]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [328], ssh-connection '', client-mode 'cli'
+Oct 20 09:12:58  2_player_crpd mgd[328]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 09:12:58  2_player_crpd mgd[328]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:12:58  2_player_crpd mgd[287]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:12:58  2_player_crpd mgd[287]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [287], ssh-connection '', client-mode 'netconf'
+Oct 20 09:12:58  2_player_crpd mgd[287]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 09:12:58  2_player_crpd mgd[287]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:13:30  2_player_crpd mgd[368]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:13:30  2_player_crpd mgd[368]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [368], ssh-connection '', client-mode 'cli'
+Oct 20 09:13:33  2_player_crpd mgd[368]: UI_CMDLINE_READ_LINE: User 'root', command 'show system commit '
+Oct 20 09:13:38  2_player_crpd mgd[368]: UI_CMDLINE_READ_LINE: User 'root', command 'show configuration | display set '
+Oct 20 09:13:55  2_player_crpd mgd[368]: UI_CMDLINE_READ_LINE: User 'root', command 'exit '
+Oct 20 09:13:55  2_player_crpd mgd[368]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:15:30  2_player_crpd mgd[336]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:15:30  2_player_crpd mgd[336]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [336], ssh-connection '', client-mode 'cli'
+Oct 20 09:15:30  2_player_crpd mgd[336]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 09:15:30  2_player_crpd mgd[336]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:15:30  2_player_crpd mgd[334]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:15:30  2_player_crpd mgd[334]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [334], ssh-connection '', client-mode 'netconf'
+Oct 20 09:15:30  2_player_crpd mgd[334]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 09:15:30  2_player_crpd mgd[334]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:15:31  2_player_crpd mgd[368]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:15:31  2_player_crpd mgd[368]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [368], ssh-connection '', client-mode 'cli'
+Oct 20 09:15:31  2_player_crpd mgd[368]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:15:31  2_player_crpd mgd[368]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [367], ssh-connection '', client-mode 'netconf'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 09:15:31  2_player_crpd mgd[367]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 09:23:16  2_player_crpd mgd[319]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:23:16  2_player_crpd mgd[319]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [319], ssh-connection '', client-mode 'cli'
+Oct 20 09:23:16  2_player_crpd mgd[319]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 09:23:16  2_player_crpd mgd[319]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:23:16  2_player_crpd mgd[312]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:23:16  2_player_crpd mgd[312]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [312], ssh-connection '', client-mode 'netconf'
+Oct 20 09:23:16  2_player_crpd mgd[312]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 09:23:16  2_player_crpd mgd[312]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:23:17  2_player_crpd mgd[366]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:23:17  2_player_crpd mgd[366]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [366], ssh-connection '', client-mode 'cli'
+Oct 20 09:23:17  2_player_crpd mgd[366]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:23:17  2_player_crpd mgd[366]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [365], ssh-connection '', client-mode 'netconf'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 09:23:17  2_player_crpd mgd[365]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 09:27:09  2_player_crpd mgd[322]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:27:09  2_player_crpd mgd[322]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [322], ssh-connection '', client-mode 'cli'
+Oct 20 09:27:09  2_player_crpd mgd[322]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 09:27:09  2_player_crpd mgd[322]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:27:09  2_player_crpd mgd[314]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:27:09  2_player_crpd mgd[314]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [314], ssh-connection '', client-mode 'netconf'
+Oct 20 09:27:09  2_player_crpd mgd[314]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 09:27:09  2_player_crpd mgd[314]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:27:10  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:27:10  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'cli'
+Oct 20 09:27:10  2_player_crpd mgd[363]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:27:10  2_player_crpd mgd[363]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [362], ssh-connection '', client-mode 'netconf'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 09:27:10  2_player_crpd mgd[362]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'
+Oct 20 09:29:47  2_player_crpd mgd[332]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:47  2_player_crpd mgd[332]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [332], ssh-connection '', client-mode 'cli'
+Oct 20 09:29:47  2_player_crpd mgd[332]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer '
+Oct 20 09:29:47  2_player_crpd mgd[332]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:29:47  2_player_crpd mgd[327]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:47  2_player_crpd mgd[327]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [327], ssh-connection '', client-mode 'netconf'
+Oct 20 09:29:47  2_player_crpd mgd[327]: UI_CMDLINE_READ_LINE: User 'root', command 'hello capabilities capability urn:ietf:params:netconf:base:1.0 capability capabilities hello rpc command show task memory detail '
+Oct 20 09:29:47  2_player_crpd mgd[327]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'get-task-memory-information level=detail'
+Oct 20 09:29:49  2_player_crpd mgd[364]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:49  2_player_crpd mgd[364]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [364], ssh-connection '', client-mode 'cli'
+Oct 20 09:29:49  2_player_crpd mgd[364]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:29:49  2_player_crpd mgd[364]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:29:49  2_player_crpd mgd[363]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:49  2_player_crpd mgd[363]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [363], ssh-connection '', client-mode 'netconf'
+Oct 20 09:29:49  2_player_crpd mgd[363]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:29:50  2_player_crpd mgd[367]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:50  2_player_crpd mgd[367]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [367], ssh-connection '', client-mode 'cli'
+Oct 20 09:29:50  2_player_crpd mgd[367]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode netconf need-trailer is-grpc '
+Oct 20 09:29:50  2_player_crpd mgd[367]: UI_LOGOUT_EVENT: User 'root' logout
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_AUTH_EVENT: Authenticated user 'root' assigned to class 'super-user'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [366], ssh-connection '', client-mode 'netconf'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'open-configuration ephemeral-instance=junos-analytics commit-check'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'load-configuration action = "merge" format="json"'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'commit-configuration'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: Started ephemeral db commit
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtaining lock for commit
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: Obtained Lock
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_EPHEMERAL_COMMIT: User 'root' has requested commit on 'junos-analytics' ephemeral database
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: finished db_ephemeral_update_change_flags
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: updating database version
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_EPHEMERAL_COMMIT_COMPLETED: commit complete on 'junos-analytics' ephemeral database
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-configuration'
+Oct 20 09:29:50  2_player_crpd mgd[366]: UI_NETCONF_CMD: User 'root' used NETCONF client to run command 'close-session'

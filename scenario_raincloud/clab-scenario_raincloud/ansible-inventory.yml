@@ -1,0 +1,27 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    juniper_crpd:
+      vars:
+        # ansible_connection: set ansible_connection variable if required
+        ansible_user: root
+        ansible_password: clab123
+      hosts:
+        clab-scenario_raincloud-2_player_crpd:
+          ansible_host: 172.24.0.12
+    linux:
+      hosts:
+        clab-scenario_raincloud-1_player_client:
+          ansible_host: 172.24.0.11
+        clab-scenario_raincloud-3_amazon_router_no_access:
+          ansible_host: 172.24.0.13
+        clab-scenario_raincloud-4_rpki_validator_no_access:
+          ansible_host: 172.24.0.14
+        clab-scenario_raincloud-5_kcix_route_server:
+          ansible_host: 172.24.0.16
+        clab-scenario_raincloud-6_web_server_no_access:
+          ansible_host: 172.24.0.15

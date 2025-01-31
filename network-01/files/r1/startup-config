@@ -1,0 +1,96 @@
+! Startup-config last modified at Sun Jan 28 03:38:55 2024 by root
+! device: r1 (cEOSLab, EOS-4.31.1F-34556000.4311F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$o6uI9oXpBnSrHX0v$IHFdwNvgT4le.p9DS8HEwSY400kLYqveHsC8tEx9KUrUjM3XsSXprjmncarv31JmmzqBhuPuF8Xz0EWpImNjD/
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname r1
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description to: r3-eth1
+   no switchport
+   ip address 10.10.0.0/31
+   ipv6 address 2001:db8:10:10::/127
+!
+interface Ethernet2
+   description to: r2-eth1
+   no switchport
+   ip address 10.10.1.0/31
+   ipv6 address 2001:db8:10:10:1::/127
+!
+interface Loopback0
+   ip address 192.168.0.1/32
+   ipv6 address 2001:db8:0:1::1/128
+!
+interface Management0
+   ip address 172.20.20.61/24
+   ipv6 address 2001:172:20:20::7/64
+!
+ipv6 access-list MGMT-NETSv6
+   10 deny ipv6 2001:172:20:20::/64 any
+   20 permit ipv6 any any
+!
+ip routing
+!
+ip prefix-list MGMT-NETS
+   seq 10 deny 172.20.20.0/24
+   seq 20 permit 0.0.0.0/0 le 32
+!
+ipv6 prefix-list MGMT-NETSv6
+   seq 10 deny 2001:172:20:20::/64
+   seq 20 permit ::/0 le 128
+!
+ipv6 unicast-routing
+!
+ip route 0.0.0.0/0 172.20.20.1
+!
+ipv6 route ::/0 2001:172:20:20::1
+!
+route-map CONNECTED_FILTER permit 10
+   match ip address prefix-list MGMT-NETS
+!
+route-map CONNECTED_FILTERv6 permit 10
+   match ipv6 address prefix-list MGMT-NETSv6
+!
+router bgp 65001
+   router-id 192.168.0.1
+   neighbor 10.10.0.1 remote-as 65003
+   neighbor 10.10.0.1 description r3
+   neighbor 10.10.1.1 remote-as 65002
+   neighbor 10.10.1.1 description r2
+   neighbor 2001:db8:10:10::1 remote-as 65003
+   neighbor 2001:db8:10:10::1 description r3-ipv6
+   neighbor 2001:db8:10:10:1::1 remote-as 65002
+   neighbor 2001:db8:10:10:1::1 description r2-ipv6
+   !
+   address-family ipv4
+      neighbor 10.10.0.1 activate
+      neighbor 10.10.1.1 activate
+      redistribute connected route-map CONNECTED_FILTER
+   !
+   address-family ipv6
+      neighbor 2001:db8:10:10::1 activate
+      neighbor 2001:db8:10:10:1::1 activate
+      redistribute connected route-map CONNECTED_FILTERv6
+!
+end

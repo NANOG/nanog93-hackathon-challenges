@@ -1,0 +1,55 @@
+---
+name: network-01
+prefix: "__lab-name"
+
+topology:
+  defaults:
+    env:
+      INTFTYPE: eth
+      ETBA: 1
+
+  kinds:
+    ceos:
+      image: ceos:latest
+    linux:
+      image: nanog92-ubuntu:latest
+
+  nodes:
+    r1:
+      kind: ceos
+      startup-config: /opt/clab/network-01/files/r1/startup-config
+      mgmt-ipv4: 172.20.20.61
+    r2:
+      kind: ceos
+      startup-config: /opt/clab/network-01/files/r2/startup-config
+      mgmt-ipv4: 172.20.20.62
+    r3:
+      kind: ceos
+      startup-config: /opt/clab/network-01/files/r3/startup-config
+      mgmt-ipv4: 172.20.20.63
+    r4:
+      kind: ceos
+      startup-config: /opt/clab/network-01/files/r4/startup-config
+      mgmt-ipv4: 172.20.20.64
+    host1:
+      kind: linux
+      binds:
+        - /opt/clab/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
+      exec:
+        - bash /tmp/add-host-routes.sh config_host1
+      mgmt-ipv4: 172.20.20.65
+    host2:
+      kind: linux
+      binds:
+        - /opt/clab/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
+      exec:
+        - bash /tmp/add-host-routes.sh config_host2
+      mgmt-ipv4: 172.20.20.66
+
+  links:
+    - endpoints: ["r1:eth1", "r3:eth1"]
+    - endpoints: ["r1:eth2", "r2:eth1"]
+    - endpoints: ["r2:eth3", "r4:eth2"]
+    - endpoints: ["r2:eth2", "host1:eth1"]
+    - endpoints: ["r3:eth2", "r4:eth1"]
+    - endpoints: ["r3:eth3", "host2:eth1"]

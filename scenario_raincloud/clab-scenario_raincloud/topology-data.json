@@ -1,0 +1,94 @@
+{
+  "name": "scenario_raincloud",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "mgmt",
+        "bridge": "br-51415f4e8c36",
+        "ipv4-subnet": "172.24.0.0/24",
+        "ipv4-gw": "172.24.0.1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "1_player_client": {
+      "index": "0",
+      "shortname": "1_player_client",
+      "longname": "clab-scenario_raincloud-1_player_client",
+      "fqdn": "1_player_client.scenario_raincloud.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/clab-scenario_raincloud/1_player_client",
+      "kind": "linux",
+      "image": "ubuntu:n91_client",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.24.0.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-51415f4e8c36",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/clab-scenario_raincloud/1_player_client",
+        "clab-node-name": "1_player_client",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/scenario_raincloud.yaml",
+        "containerlab": "scenario_raincloud"
+      },
+      "port-bindings": [
+      ]
+    },
+    "2_player_crpd": {
+      "index": "1",
+      "shortname": "2_player_crpd",
+      "longname": "clab-scenario_raincloud-2_player_crpd",
+      "fqdn": "2_player_crpd.scenario_raincloud.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/clab-scenario_raincloud/2_player_crpd",
+      "kind": "juniper_crpd",
+      "image": "crpd:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.24.0.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-51415f4e8c36",
+        "clab-node-group": "",
+        "clab-node-kind": "juniper_crpd",
+        "clab-node-lab-dir": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/clab-scenario_raincloud/2_player_crpd",
+        "clab-node-name": "2_player_crpd",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab/github.com/nanog/nanog91-hackathon/scenario_raincloud/scenario_raincloud.yaml",
+        "containerlab": "scenario_raincloud"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 7784,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 830,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 179,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0
