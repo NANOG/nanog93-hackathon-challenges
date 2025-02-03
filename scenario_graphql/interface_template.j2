@@ -1,0 +1,18 @@
+{%- for device in devices %}
+{%- for interface in device.interfaces %}
+interface {{ interface.name }}
+  description {{ interface.connected_interface.device.name }}:{{ interface.connected_interface.name }}
+  no switchport
+  {%- for ip_address in interface.ip_addresses %}
+  {%- if ip_address.ip_version == 4 %}
+  ip address {{ ip_address.address }}
+  {%- endif %}
+  {%- endfor %}
+  {%- for ip_address in interface.ip_addresses %}
+  {%- if ip_address.ip_version == 6 %}
+  ipv6 address {{ ip_address.address }}
+  {%- endif %}
+  {%- endfor %}
+!
+{%- endfor%}
+{%- endfor%}
