@@ -1,0 +1,49 @@
+name: snow_storm
+prefix: ""
+mgmt:
+  network: mgmt
+  ipv4-subnet: 172.26.0.0/24
+topology:
+  nodes:
+    1_player_client:
+      kind: linux
+      image: ubuntu:n91_client
+      exec:
+       - ip addr add 192.168.0.0/31 dev eth1
+       - ip route change default via 192.168.0.1 dev eth1
+    2_player_crpd_router:
+      kind: juniper_crpd
+      image: crpd:latest
+      startup-config: files/player_crpd.conf
+    7018_router_no_access:
+      kind: juniper_crpd
+      image: crpd:latest
+      startup-config: files/7018.conf
+    7943_router_no_access:
+      kind: linux
+      image: ubuntu:gobgp3
+      exec:
+       - bash /home/ubuntu/init.sh
+    web_server_no_access:
+      kind: linux
+      image: ubuntu:server-n93
+      exec:
+       - ip address add 216.230.122.3/31 dev eth1
+       - ip route change default via 216.230.122.2 dev eth1
+       - bash /home/ubuntu/init.sh
+    rpki_validator_no_access:
+      kind: linux
+      image: nlnetlabs/routinator:latest
+      ports:
+       - 80:8323
+      exec:
+       - ip addr add 192.168.1.1/31 dev eth1
+  links:
+    - endpoints: ["1_player_client:eth1", "2_player_crpd_router:eth1"]
+
+    - endpoints: ["2_player_crpd_router:eth2", "rpki_validator_no_access:eth1"]  
+    - endpoints: ["2_player_crpd_router:eth3", "7018_router_no_access:eth1"]    
+    - endpoints: ["2_player_crpd_router:eth4", "7943_router_no_access:eth1"]
+
+    - endpoints: ["7018_router_no_access:eth2", "web_server_no_access:eth1"]
+
